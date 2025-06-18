@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: signalwire-voice
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python voice_webhook_render.py
